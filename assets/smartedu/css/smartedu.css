@@ -41,7 +41,7 @@
   background-color: #FE6003;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
-  width: 17%;
+  width: 15%;
 
 }
 
@@ -103,6 +103,15 @@
     margin-left: 17rem;
     width: calc(100% - 17rem);
   }
+}
+
+.sm-table-scroll-presensi {
+    height:200px;
+    overflow-y:auto;
+    width: 100%;
+}
+.sm-hight-detail-presensi{
+  height:90%;
 }
 
 /*
