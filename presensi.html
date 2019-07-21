@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./assets/smartedu/css/smartedu.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+<<<<<<< HEAD
 
   <!--   MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/css/mdb.min.css" rel="stylesheet">
@@ -19,6 +20,9 @@
   <script src='./assets/fullcalender/packages/core/main.js'></script>
   <script src='./assets/fullcalender/packages/interaction/main.js'></script>
   <script src='./assets/fullcalender/packages/daygrid/main.js'></script>
+=======
+  <link rel="stylesheet" href="assets/static/css/mdb.min.css">
+>>>>>>> devry
 
 </head>
 
@@ -143,7 +147,11 @@
 
   <section id="sidebars">
     <!-- Vertical navbar -->
+<<<<<<< HEAD
     <div class="vertical-nav sm-color-black" id="sidebar" style="z-index:1">
+=======
+    <div class="vertical-nav bg-dark" id="sidebar" style="z-index:2">
+>>>>>>> devry
       <div class="py-4 px-3 mb-4 sm-color-black">
         <div class="media d-flex align-items-center"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556074849/avatar-1_tcnd60.png" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
           <div class="media-body">
@@ -226,7 +234,7 @@
       </ul>
     </div>
     <!-- End vertical navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark sm-color-orange shadow p-3 mb-5 sticky-top" style="z-index:0">
+    <nav class="navbar navbar-expand-lg navbar-dark sm-color-orange shadow p-3 mb-5 sticky-top" style="z-index:1">
       <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -244,10 +252,13 @@
     <!-- Page content holder -->
     <div class="page-content p-5" style="" id="content">
       <div class="col-md-12">
-        <div class="card">
-          <h1 class="card-header font-weight-light">Presensi</h1>
+        <div class="card shadow">
+          <div class="card-header">
+            Presensi
+          </div>
           <div class="card-body">
             <form class="" action="index.html" method="post">
+<<<<<<< HEAD
               <div class="md-form">
                 <input type="text" id="form1" class="form-control">
                 <label for="form1">Title</label>
@@ -275,6 +286,41 @@
                       <option value="2">Option 2</option>
                       <option value="3">Option 3</option>
                     </select>
+=======
+                <div class="form-group">
+                  <label for="title">Title</label>
+                  <input type="text" name="title" value="" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="description">description</label>
+                  <textarea name="name" rows="3" cols="20" class="form-control"></textarea>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <select class="browser-default custom-select">
+                        <option selected>Kelas</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <select class="browser-default custom-select">
+                        <option selected>Mapel</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <button class="btn btn-primary btn-rounded">Simpan</button>
+>>>>>>> devry
                   </div>
                 </div>
               </div>
@@ -291,8 +337,15 @@
 
   </section>
 
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+  <script src="./assets/smartedu/js/main.js" charset="utf-8"></script>
+  <script src="assets/static/js/mdb.min.js"></script>
 
 </body>
+<<<<<<< HEAD
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
 <script src="./assets/bootstrap/js/bootstrap.bundle.js" charset="utf-8"></script>
 <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" charset="utf-8"></script>
@@ -317,5 +370,7 @@
     calendar.render();
   });
 </script>
+=======
+>>>>>>> devry
 
 </html>
