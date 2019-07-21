@@ -10,11 +10,7 @@
   <link rel="stylesheet" href="./assets/smartedu/css/smartedu.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-  <link href='./assets/fullcalender/packages/core/main.css' rel='stylesheet' />
-  <link href='./assets/fullcalender/packages/daygrid/main.css' rel='stylesheet' />
-  <script src='./assets/fullcalender/packages/core/main.js'></script>
-  <script src='./assets/fullcalender/packages/interaction/main.js'></script>
-  <script src='./assets/fullcalender/packages/daygrid/main.js'></script>
+  <link rel="stylesheet" href="assets/static/css/mdb.min.css">
 
 </head>
 
@@ -242,14 +238,53 @@
       <div class="col-md-12">
         <div class="row">
           <div class="col-md-6">
-            <div class="card">
+            <div class="card shadow">
               <div class="card-body">
                 <img src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=Example" alt="">
+                
+                <div class="row mt-3">
+                  <div class="col">
+                    <button class="btn btn-primary btn-rounded ">Manual</button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-warning btn-rounded ">Batalkan</button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-success btn-rounded ">Selesai</button>
+                  </div>
+                </div>
+                <style>
+                .md-v-line {
+                  position: absolute;
+                  border-left: 1px solid rgba(0,0,0,.125);
+                  height: 50px;
+                  top:0px;
+                  left:54px;
+                  }
+                </style>
+
+                <ul class="list-group mt-3">
+                  <li class="list-group-item sm-color-orange text-white">
+                    <div class="md-v-line"></div><i class="fas fa-chalkboard-teacher mr-5"></i> Rika.spd
+                  </li>
+                  <li class="list-group-item">
+                    <div class="md-v-line"></div><i class="fas fa-clipboard-list mr-5"></i>20 Siswa
+                  </li>
+                  <li class="list-group-item sm-color-orange text-white">
+                    <div class="md-v-line"></div><i class="fas fa-notes-medical mr-5"></i>3 Siswa
+                  </li>
+                  <li class="list-group-item">
+                    <div class="md-v-line"></div><i class="fas fa-clipboard mr-5"></i>1 Siswa
+                  </li>
+                  <li class="list-group-item sm-color-orange text-white">
+                    <div class="md-v-line"></div><i class="fas fa-users mr-5"></i>24 Siswa
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="card sm-hight-detail-presensi sm-table-scroll-presensi">
+            <div class="card sm-hight-detail-presensi sm-table-scroll-presensi shadow">
               <div class="card-body">
 
                 <table class="table table-fixed ">
@@ -344,33 +379,7 @@
         </div>
 
 
-        <div class="row">
-          <div class="col-md-6">
-            <table class="table table-bordered success">
-				<thead>
-					<tr >
-						<th >Guru</th>
-						<td>Vikram</td>
-					</tr>
-					<tr>
-						<th class="info">Title</th>
-						<td>Aritmatika</td>
-					</tr>
-          <tr>
-            <th class="info">Jam Login</th>
-            <td>12:02</td>
-          </tr>
-					<tr>
-						<th class="info">Jam Selesai</th>
-						<td>14:02</td>
-					</tr>
 
-					<tr>
-						<th colspan="2"> <button type="button" name="button" class="btn btn-primary" style="float:right">Selesai</button> </th>
-					</tr>
-				</thead>
-
-			</table>
           </div>
         </div>
       </div>
@@ -384,23 +393,7 @@
 <script src="./assets/bootstrap/js/bootstrap.bundle.js" charset="utf-8"></script>
 <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" charset="utf-8"></script>
 <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js" charset="utf-8"></script>
+<script src="assets/static/js/mdb.min.js"></script>
 <script src="./assets/smartedu/js/main.js" charset="utf-8"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      plugins: ['interaction', 'dayGrid'],
-      editable: true,
-      eventLimit: true, // allow "more" link when too many events
-      events: [{
-        title: 'All Day Event',
-        start: '2019-07-02'
-      }, ]
-    });
-
-    calendar.render();
-  });
-</script>
 
 </html>

@@ -10,11 +10,7 @@
   <link rel="stylesheet" href="./assets/smartedu/css/smartedu.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-  <link href='./assets/fullcalender/packages/core/main.css' rel='stylesheet' />
-  <link href='./assets/fullcalender/packages/daygrid/main.css' rel='stylesheet' />
-  <script src='./assets/fullcalender/packages/core/main.js'></script>
-  <script src='./assets/fullcalender/packages/interaction/main.js'></script>
-  <script src='./assets/fullcalender/packages/daygrid/main.js'></script>
+  <link rel="stylesheet" href="assets/static/css/mdb.min.css">
 
 </head>
 
@@ -240,8 +236,10 @@
     <!-- Page content holder -->
     <div class="page-content p-5" id="content">
       <div class="col-md-12">
-        <div class="card">
-          <h1 class="card-header font-weight-light">Presensi</h1>
+        <div class="card shadow">
+          <div class="card-header">
+            Presensi
+          </div>
           <div class="card-body">
             <form class="" action="index.html" method="post">
                 <div class="form-group">
@@ -255,28 +253,28 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <label for="">Kelas</label>
-                      <select class="custom-select" name="kelas">
-                          <option value="">IPS 1</option>
-                          <option value="">IPS 2</option>
-                          <option value="">IPS 3</option>
+                      <select class="browser-default custom-select">
+                        <option selected>Kelas</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
                       </select>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
-                      <label for="">Mapel</label>
-                      <select class="custom-select" name="kelas">
-                          <option value="">Ekonomi</option>
-                          <option value="">Bahasa Indonesia</option>
-                          <option value="">Matematika</option>
+                      <select class="browser-default custom-select">
+                        <option selected>Mapel</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
                       </select>
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-12">
-                    <button class="btn btn-lg btn-info">Simpan</button>
+                    <button class="btn btn-primary btn-rounded">Simpan</button>
                   </div>
                 </div>
             </form>
@@ -287,29 +285,13 @@
 
   </section>
 
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+  <script src="./assets/smartedu/js/main.js" charset="utf-8"></script>
+  <script src="assets/static/js/mdb.min.js"></script>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" charset="utf-8"></script>
-<script src="./assets/bootstrap/js/bootstrap.bundle.js" charset="utf-8"></script>
-<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" charset="utf-8"></script>
-<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js" charset="utf-8"></script>
-<script src="./assets/smartedu/js/main.js" charset="utf-8"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      plugins: ['interaction', 'dayGrid'],
-      editable: true,
-      eventLimit: true, // allow "more" link when too many events
-      events: [{
-        title: 'All Day Event',
-        start: '2019-07-02'
-      }, ]
-    });
-
-    calendar.render();
-  });
-</script>
 
 </html>
